@@ -1,45 +1,56 @@
-import React, {Fragment, useState} from 'react'
-import Producto from './Producto'
-import { useData } from '../hooks/useData'
-import { Modal } from './Modal'
-
+import React, { useState } from "react";
+import Producto from "./Producto";
+import { useData } from "../hooks/useData";
+import { Modal } from "./Modal";
 
 const Container = () => {
-	
-    const { docs: productos, userId } = useData('productos');
-	const [isVisible, setIsVisible] = useState(false);
+  const { docs: productos, userId } = useData("productos");
+  const [isVisible, setIsVisible] = useState(false);
 
-    const showModal = () => setIsVisible(true);
-	const hideModal = () => setIsVisible(false);
+  const showModal = () => {
+    setIsVisible(true);
+  };
 
-    console.log(useData('productos'));
-
-    const newProducto = {nombre: '', descripcion:''}
+  const hideModal = () => setIsVisible(false);
+  const newProducto = {
+    nombre: "",
+    descripcion: "",
+    edadminima: "",
+    compania: "",
+    precio: "",
+  };
 
   return (
-    <Fragment>
-			<header className="productoss-header">
-				<h3 className='color-user'><br/>Productos</h3>
-			</header>
+    <div className="container">
+      <header className="productoss-header">
+        <h3 className="color-user">
+          <br />
+          Productos
+        </h3>
+      </header>
 
-			<div className='productos-container'>
-					<div className='notes-grid'>
-						{   
-							productos.map((producto) => (
-								<Producto key={producto.id} producto={producto} userId={userId}/>
-							))
-						}
-					</div>
-			</div>
-			<button className='big-add show-add-note' onClick={showModal}>
-				<i className='material-icons'>add</i>
-			</button>
-			{
-				isVisible &&
-				<Modal mode='create' isVisible={isVisible} note={newProducto} hideModal={hideModal} userId={userId}/>
-			}
-		</Fragment>
-  )
-}
+      <div className="productos-container">
+        <div className="productos-grid ">
+          {productos.map((producto) => (
+            <Producto key={producto.id} producto={producto} userId={userId} />
+          ))}
+        </div>
+      </div>
+      <div className="btn-add-producto-modal">
+        <button className="big-add" onClick={showModal}>
+          AGREGAR PRODUCTO
+        </button>
+        {isVisible && (
+          <Modal
+            mode="create"
+            isVisible={true}
+            producto={newProducto}
+            hideModal={hideModal}
+          />
+        )}
+      </div>
+    </div>
+  );
+};
 
-export default Container
+export default Container;
