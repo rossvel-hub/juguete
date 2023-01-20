@@ -22,7 +22,6 @@ const customStyles = {
 export const Modal = ({ producto, mode, isVisible, hideModal }) => {
   console.log(producto);
   const { id, nombre, descripcion, edadminima, compania, precio } = producto;
-  //const uid = userId;
 
   const [newNombre, setNewNombre] = useState(nombre);
   const [newDescripcion, setNewDescripcion] = useState(descripcion);

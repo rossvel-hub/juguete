@@ -5,7 +5,6 @@ import { Modal } from "./Modal";
 import logo from "../assets/muneca.png";
 
 const Producto = ({ producto, userId }) => {
-  console.log("producto");
   const { id, nombre, descripcion, edadminima, compania, precio } = producto;
 
   const [isVisible, setIsVisible] = useState(false);
