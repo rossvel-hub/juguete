@@ -23,19 +23,6 @@ const Container = () => {
   return (
     <div className="container">
       <header className="productoss-header">
-        <h3 className="color-user">
-          <br />
-          Productos
-        </h3>
-      </header>
-
-      <div className="productos-container">
-        <div className="productos-grid ">
-          {productos.map((producto) => (
-            <Producto key={producto.id} producto={producto} userId={userId} />
-          ))}
-        </div>
-      </div>
       <div className="btn-add-producto-modal">
         <button className="big-add" onClick={showModal}>
           AGREGAR PRODUCTO
@@ -49,6 +36,16 @@ const Container = () => {
           />
         )}
       </div>
+      </header>
+
+      <div className="productos-container">
+        <div className="productos-grid ">
+          {productos.map((producto) => (
+            <Producto key={producto.id} producto={producto} userId={userId} />
+          ))}
+        </div>
+      </div>
+      
     </div>
   );
 };

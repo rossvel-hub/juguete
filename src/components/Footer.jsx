@@ -10,7 +10,7 @@ const Footer = () => {
               <ul className="list-unstyled mb-0">
                 <li>
                   <a href="#" className="text-black" target="_blank">
-                    API
+                    FIREBASE
                   </a>
                 </li>
               </ul>

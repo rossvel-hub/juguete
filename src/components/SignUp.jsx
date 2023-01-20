@@ -66,7 +66,7 @@ const SignUp = () => {
                 <span class="fas fa-key"></span>
                 <input type="password" name="password" id="pwd" placeholder="Password Confirm" onChange={handleConfirmPassword} required />
             </div>
-            <button class="btn mt-3">SignUp</button>
+            <button class="btn mt-3" style={{ backgroundColor: "#70CFFF" }}>SignUp</button>
         </form>
         <div class="text-center mt-4 name">
               <section className='social-media'>
