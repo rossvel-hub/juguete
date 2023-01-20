@@ -24,9 +24,13 @@ const Container = () => {
     <div className="container">
       <header className="productoss-header">
       <div className="btn-add-producto-modal">
-        <button className="big-add" onClick={showModal}>
-          AGREGAR PRODUCTO
-        </button>
+        {/* <button className="big-add" onClick={showModal}>
+        <i class="bi bi-plus-circle-fill"></i>
+        </button> */}
+        <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle text-black" onClick={showModal}>
+        <i class="bi bi-plus-circle-fill"></i>
+                  <span className="ms-1 d-sm-inline">Agregar Producto</span> 
+                </a>
         {isVisible && (
           <Modal
             mode="create"

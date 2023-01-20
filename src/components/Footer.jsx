@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-dark text-center text-white">
-      <div className="container p-4" style={{ backgroundColor: "pink" }}>
-        <section className="">
+      <div className="p-4" style={{ backgroundColor: "pink" }}>
+        <section>
           <div className="row">
             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
               <ul className="list-unstyled mb-0">
