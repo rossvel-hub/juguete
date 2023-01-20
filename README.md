@@ -2,7 +2,8 @@
 
 - Sitio web para la administración de productos de una juguetería.
 
-### Link deploy de proyecto en Neelify
+### Link deploy de proyecto en Netlify 
+[Link JUGUETE](https://verdant-marshmallow-168e08.netlify.app/login)
 
 ### Requerimientos del sistema
 
@@ -13,6 +14,18 @@
 - Opcionalmente puede incorporar al sitio la autenticación y persistencia de sesiones.
 - Se requiere visualizar la lista de productos registrados.
 - Se requiere poder agregar nuevos productos a la lista.
+
+
+### Vistas de proyecto: Login, Signup, Contenedor
+
+![](https://raw.githubusercontent.com/rossvel-hub/juguete/main/Login-Signup-Container.png)
+
+### Vista de Modal en Web
+
+![](https://raw.githubusercontent.com/rossvel-hub/juguete/main/CUD.png)
+
+### Uso de Firebase/fireStore para Autenticacion y MAnejo de DB
+
 
 
 [Links with title](https://sensational-mandazi-4df4a6.netlify.app)
