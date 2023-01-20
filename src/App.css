@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.contenedor-principal {
-  display: flex;
-  flex-direction: column;
-}
-
 .div-header {
   background-color: pink;
 }
@@ -152,7 +147,7 @@ body {
 .productos-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -189,15 +184,15 @@ body {
   letter-spacing: 1.3px;
 }
 
-.show-add-producto {
-  margin-right: 500px;
-}
+/* .show-add-producto {
+  margin-right: 50px;
+} */
 
 .btn-add-producto-modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .big-add {

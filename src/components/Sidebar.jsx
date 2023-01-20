@@ -15,52 +15,87 @@ const Sidebar = () => {
     }
 
   return (
-    <div className="container-fluid" >
-    <div className="row flex-nowrap" >
-        <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark div-sidebar" >
-            <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                <a href="/" className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span className="fs-5 d-none d-sm-inline">Menu</span>
-                    <hr/>
+    <div className="container-fluid">
+      <div className="row flex-nowrap">
+        <div className="col-auto col-1 col-sm-1 col-md-3 col-xl-2 px-sm-2 px-0 bg-dark div-sidebar">
+          <div className="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-white min-vh-100">
+            <div className='col-12'>
+                <div className='d-flex justify-content-end'>
+                <a href="/" className="fs-4 pt-3 text-white text-decoration-none d-inline d-md-none"><i className="bi bi-list"></i></a>
+                <a href="/" className="fs-4 pt-3 text-white text-decoration-none d-none d-md-inline"><i className="bi bi-x-lg"></i></a> 
+
+                    <div>
                     
-                </a>
-
-                <hr/>
-                <div className="dropdown pb-4">
-                    <a href="#" className="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="nina_feliz.png" alt="hugenerd" width="100" height="100" className="rounded-circle" />
-                    </a>
+                    </div>
+                
                 </div>
-                <div>
-                <h6>Welcome</h6>
-                <p>{currentUser.email}</p>
-                <button className='logout-button' onClick={handleLogout}>Log Out</button>
-                </div>
-                <hr/>
-
-                <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li>
-                        <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-speedometer2"></i> <span className="ms-1 d-none d-sm-inline">Item </span> 1</a>
-                        <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                            <li className="w-100">
-                                <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Child</span> 1 </a>
-                            </li>
-                            <li>
-                                <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Child</span> 2 </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <hr />
+            
             </div>
+            
+            <hr />
+            <div className="dropdown pb-4 d-none d-md-inline">
+              <a
+                href="#"
+                className="d-flex align-items-center text-white text-decoration-none"
+                id="dropdownUser1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="nina_feliz.png"
+                  alt="hugenerd"
+                  width="100"
+                  height="100"
+                  className="rounded-circle"
+                />
+              </a>
+            </div>
+            <div className='d-none d-md-inline'>
+              <p>{currentUser.email}</p>
+            </div>
+            <hr />
+
+            <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start text-white" id="menu">
+              <li>
+                <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle text-white">
+                  <i className="fs-sm-2 fs-md-4 bi-house-fill"></i>
+                  <span className="ms-1 d-none d-md-inline">Inicio</span> 
+                </a>
+                <ul
+                  className="collapse show nav flex-column ms-1"
+                  id="submenu1"
+                  data-bs-parent="#menu"
+                >
+                  <li className="w-100">
+                    <a href="#" className="nav-link px-0 text-white ">
+                    <i className="fs-sm-2 fs-md-4 bi-people-fill"></i>
+                      <span className="d-none d-sm-inline">Usuario</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="nav-link px-0 text-white">
+                    <i className="fs-sm-2 fs-md-4 bi-clipboard2-data-fill"></i>
+                      <span className="d-none d-sm-inline">Productos</span> 
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <hr />
+            <div>
+              <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle text-white"  onClick={handleLogout}>
+              <i className="fs-sm-2 fs-md-4 bi bi-box-arrow-left"></i>
+                  <span className="ms-1 d-none d-md-inline">Cerrar sesion</span> 
+                </a>
+            </div>
+          </div>
         </div>
         <div className="col py-3">
-        <Container />
+          <Container />
         </div>
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
 export default Sidebar
