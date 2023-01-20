@@ -1,3 +1,22 @@
+### JUGUETE
+
+- Sitio web para la administración de productos de una juguetería.
+
+### Link deploy de proyecto en Neelify
+
+### Requerimientos del sistema
+
+- Se requiere que el diseño del sitio sea responsivo y adaptable a diferentes resoluciones de pantalla.
+- Se requiere utilizar HTML, CSS y JS para el diseño y desarrollo de las vistas. 
+- Se requiere implementar una arquitectura basada en componentes reutilizables.
+- Se requiere utilizar una librería/framework como React o Angular.
+- Opcionalmente puede incorporar al sitio la autenticación y persistencia de sesiones.
+- Se requiere visualizar la lista de productos registrados.
+- Se requiere poder agregar nuevos productos a la lista.
+
+
+[Links with title](https://sensational-mandazi-4df4a6.netlify.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
