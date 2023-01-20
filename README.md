@@ -24,9 +24,13 @@
 
 ![](https://raw.githubusercontent.com/rossvel-hub/juguete/main/CUD.png)
 
-### Uso de Firebase/fireStore para Autenticacion y MAnejo de DB
+### Uso de Firebase/fireStore para Autenticacion y Manejo de DB
 
+![](https://raw.githubusercontent.com/rossvel-hub/juguete/main/Auth-Firebase.png)
 
+![](https://raw.githubusercontent.com/rossvel-hub/juguete/main/Firestore.png)
+
+***
 
 [Links with title](https://sensational-mandazi-4df4a6.netlify.app)
 
